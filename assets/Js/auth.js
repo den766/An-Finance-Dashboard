@@ -77,7 +77,7 @@ const loginHandlerFunction = function (e) {
     }
 
     setTimeout(() => {
-      window.location.href = "index.html";
+      window.location.href = "main.html";
     }, 1000);
   } else {
     alert("Invalid username or password. Please try again.");
