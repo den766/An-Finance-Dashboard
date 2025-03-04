@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: #264eca; */
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.cartIcon {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.login {
+  width: 300px;
+  height: 398px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 70%, 44%);
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border: 1.5px solid grey;
+  margin-bottom: 0.6rem;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.logn__btn {
+  margin: auto;
+  margin-top: 25px;
+  padding: 5px;
+  font-size: 1rem;
+  width: 205px;
+  height: 30px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.Search-bar {
+  height: 100%;
+  width: 90%;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.Search-bar::placeholder {
+  /* background-color: #264eca; */
+  padding: 5px;
+  outline: none;
+}
+
+input {
+  background-color: hsl(225, 70%, 44%);
+  color: white;
+}
+
+input:focus {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  caret-color: lightblue;
+  color: white;
+  font-size: 1rem;
+}
+
+/* input{
+
+    height: 30px;
+    outline: none;
+    border: none;
+} */

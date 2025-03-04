@@ -1,0 +1,393 @@
+:root {
+  --font-primary: "Glory", serif;
+  --font-secondary: "Nunito", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+}
+
+/* Spinner loader */
+
+/* Loading Spinner Style */
+.loading-spinner {
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* css Simple Spinner  */
+.loading-spinner:after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* !Header section Styling */
+
+header {
+  max-width: 90%;
+  margin: 0 auto;
+  height: 2.87rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.nav-Items1 {
+  display: flex;
+  justify-content: space-between;
+  width: 34.75rem;
+  align-items: center;
+}
+
+.nav-Items2 {
+  display: flex;
+  justify-content: space-between;
+  width: 92px;
+  align-items: center;
+}
+
+.serach-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Search-bar {
+  background-color: inherit;
+  width: 15rem;
+  height: 2rem;
+  outline: none;
+  border: none;
+}
+
+.Search-bar::placeholder {
+  font-family: "Glory", sans-serif;
+  font-size: 1rem;
+  color: gray;
+}
+
+/* !Dashboard Section Styling - Sidebar */
+
+.Dashboard-Main {
+  /* background: linear-gradient(135deg, #56ccf2, #2f80ed); */
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 2.6rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.4fr;
+  height: 47rem;
+  gap: 10px;
+  border-radius: 1.5rem;
+  /* background-color: hsl(35, 80%, 75%); */
+  /* background: linear-gradient(135deg, #56CCF2, #2F80ED); */
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.sidebar-Items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sidebar-Items p {
+  font-size: 0.9rem;
+  font-family: var(--font-primary);
+}
+
+.sidebar-Items button {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  padding: 4px 14px;
+}
+
+.selfAlign {
+  order: 5;
+  margin-top: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.Transaction-Headings {
+  display: flex;
+  justify-content: space-between;
+  width: 32.75rem;
+  margin-top: 3.5rem;
+  padding-left: 2.5rem;
+}
+
+.Transaction-Headings h2 {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* !Styling Dashboard Card & transaction Details */
+
+.Card-details {
+  display: grid;
+  grid-template-columns: 18rem 9.125rem 9.125rem;
+  margin-top: 2.17rem;
+  height: 13rem;
+  gap: 2rem;
+  padding: 0 2.5rem;
+}
+
+.Card-details > div {
+  border-radius: 24px;
+  padding: 10px;
+  margin-top: 1rem;
+  height: 11.43rem;
+}
+
+/* The problem of the svg img inside the cardwrapper is due to I not set
+the width of 18rem which exactly as the first column. */
+
+.card-Wrapper {
+  grid-column: 1; /* Ensure it stays in the first column */
+  width: 18rem; /* Same as grid-template-columns */
+  height: 100%; /* Take full height of the grid cell */
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  padding: 0;
+  margin: 0;
+}
+
+.cardImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Card-details div {
+  background-color: #eeedeb;
+}
+
+.Freelance-Div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  row-gap: 15px;
+}
+
+.Freelance-nested {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 2px;
+}
+
+.Freelance-nested > h3 {
+  font-family: var(--font-primary);
+}
+
+.Freelance-nested p {
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  color: #2e335b;
+}
+
+.Card-details .Amount {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+}
+
+/* !Transaction Overview Styling */
+
+.Transaction-overview {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding: 0 2.5rem;
+}
+
+.Transaction-overview h3 {
+  font-family: var(--font-primary);
+  font-weight: bold;
+}
+
+.Transaction-overview button {
+  font-family: var(--font-primary);
+  padding: 5px;
+  border-radius: 5px;
+  width: 7.35rem;
+  border: 1px solid black;
+}
+
+/* .Transaction-overview button:hover{
+
+    background-color: red;
+    color: black;
+} */
+
+.Transaction-Movements {
+  overflow: scroll;
+  scrollbar-width: none;
+  height: 25rem;
+}
+.Real-Transactions {
+  display: flex;
+  /* flex-direction: column; */
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  margin-top: 1.935rem;
+}
+
+/* !Have little issue for the alighnment inside the realtransaction
+! lets figure out later  */
+.Real-Transactions .Transaction-Amount {
+  flex-basis: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* .Real-Transactions  div{
+
+    width: 5rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+} */
+
+/* .Real-Transactions .more-Icon{
+
+    flex-direction: row;
+    justify-content: flex-end;
+} */
+
+.Transaction-Amount {
+  text-align: center;
+}
+
+.TrnFont {
+  font-family: var(--font-primary);
+}
+
+/* !Total-Balance Styling */
+
+.TotalBalance {
+  /* background-color: #eeedeb; */
+  /* background: linear-gradient(135deg, #56ccf2, #2f80ed); */
+
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 1.5rem;
+  align-items: center;
+  gap: 3rem;
+}
+
+.TotalBalance div {
+  background-color: #dbdddc;
+  width: 22rem;
+  height: 10rem;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.TotalBalance div h2 {
+  margin-bottom: 1.5rem;
+  font-family: var(--font-primary);
+}
+
+.form__label {
+  font-family: var(--font-primary);
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input {
+  border-radius: 5px;
+  border: none;
+  width: 6.25rem;
+  height: 1.5rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.8rem;
+  row-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-timer {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form__btn {
+  background-color: hsl(0, 100%, 85%);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 3rem;
+  height: 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: black;
+  width: 100%;
+  margin: 5px auto;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="loading" class="loading-spinner">Loading...</div>
+    <div id="content" style="display: none">
+      <!-- Header Section -->
+      <header class="header-Items">
+        <div class="nav-Items1">
+          <img src="./assets/svg/logo.svg" alt="company-logo&Name" />
+          <div class="serach-container">
+            <img
+              class="serach-icon"
+              src="./assets/svg/serachicon.svg"
+              width="16px"
+              height="16px"
+              alt="seachbarIcon"
+            />
+            <input class="Search-bar" type="text" placeholder="search" />
+          </div>
+        </div>
+        <div class="nav-Items2">
+          <img
+            src="./assets/svg/notification-icon.svg"
+            width="24px"
+            height="24px"
+            alt="notification-icon"
+          />
+          <img
+            src="./assets/svg/profile.svg"
+            width="48px"
+            height="48px"
+            alt="profile-icon"
+          />
+        </div>
+      </header>
+
+      <!-- MainSection of Dashboard -->
+
+      <main class="Dashboard-Main">
+        <!-- Sidebar -->
+        <div class="side-bar">
+          <div class="sidebar-Items">
+            <img src="./assets/svg/home.svg" alt="homeIcon" />
+            <p>Overview</p>
+          </div>
+          <div class="sidebar-Items">
+            <img src="./assets/svg/message.svg" alt="messageIcon" />
+            <p>Messages</p>
+          </div>
+          <div class="sidebar-Items">
+            <img src="./assets/svg/community.svg" alt="coummnityIcon" />
+            <p>Community</p>
+          </div>
+          <div class="sidebar-Items">
+            <img src="./assets/svg/payments.svg" alt="PaymentsIcon" />
+            <p>Payments</p>
+          </div>
+          <div class="sidebar-Items">
+            <img src="./assets/svg/statistics.svg" alt="statisticsIcon" />
+            <p>Statistics</p>
+          </div>
+          <div class="sidebar-Items">
+            <img src="./assets/svg/referals.svg" alt="referalsIcon" />
+            <p>Refferals</p>
+          </div>
+
+          <div class="selfAlign">
+            <div class="sidebar-Items">
+              <img src="./assets/svg/AccountIcon.svg" alt="referalsIcon" />
+              <p>Account</p>
+            </div>
+
+            <div class="sidebar-Items">
+              <img src="./assets/svg/logout.svg" alt="referalsIcon" />
+              <button class="logout__btn">LogOut</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transaction-OverviewSection -->
+
+        <div class="Transactions">
+          <div class="Transaction-Headings">
+            <h2>Dashboard</h2>
+            <h2 class="Welcome__Heading">Upcoming Payments</h2>
+          </div>
+
+          <div class="Card-details">
+            <div class="card-Wrapper">
+              <img
+                class="cardImg"
+                src="./assets/svg/Card.svg"
+                alt="cardDetailsImg"
+              />
+            </div>
+            <div class="Freelance-Div">
+              <img src="./assets/svg/salarys.svg" alt="freelanceIcon" />
+              <div class="Freelance-nested">
+                <h3>TotalBalance</h3>
+              </div>
+
+              <p class="Main-Amount Amount">$1500</p>
+            </div>
+
+            <div class="Freelance-Div">
+              <div class="Freelance-icon">
+                <img src="./assets/svg/FreelanceIcon.svg" alt="freelanceIcon" />
+              </div>
+              <div class="Freelance-nested">
+                <h3>Salary</h3>
+                <p>Regular payment</p>
+              </div>
+
+              <p class="Amount">$4000</p>
+            </div>
+          </div>
+
+          <!-- Real-Transactions Showing Section -->
+          <div class="Transaction-Movements">
+            <div class="Transaction-overview">
+              <h3>Recent transactions</h3>
+              <button class="btn-sort">Sort</button>
+            </div>
+
+            <!-- Real Transactons -->
+            <div class="Real-Transactions">
+              <div class="Transaction-Icon">
+                <img
+                  src="./assets/svg/dollar.svg"
+                  width="28px"
+                  height="28px"
+                  alt="dollarIcon"
+                />
+              </div>
+              <div>
+                <p class="Transactiontype TrnFont">Deposit</p>
+              </div>
+              <div class="Transaction-Time TrnFont">
+                <time class="Trc-Time TrnFont" datetime="">8:00 Am</time>
+              </div>
+              <div class="Transaction-Amount TrnFont" a>
+                <p>$100</p>
+              </div>
+              <div class="more-Icon">
+                <img src="./assets/svg/moreicon.svg" alt="moreIcon" />
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+
+        <!-- TotalBalance ShowingSection -->
+        <div class="TotalBalance">
+          <!-- Transfer Amount -->
+          <div class="Amount-Transfer">
+            <h2>Transfer money</h2>
+            <form class="form form--transfer">
+              <input type="text" class="form__input form__input--to" />
+              <input type="number" class="form__input form__input--amount" />
+              <button class="form__btn form__btn--transfer">&rarr;</button>
+              <label class="form__label">Transfer to</label>
+              <label class="form__label">Amount</label>
+            </form>
+          </div>
+
+          <!-- Loan Amount-->
+          <div class="Loan-Amount">
+            <h2>Request loan</h2>
+            <form class="form form--loan">
+              <input
+                type="number"
+                class="form__input form__input--loan-amount"
+              />
+              <button class="form__btn form__btn--loan">&rarr;</button>
+              <!-- <label class="form__label form__label--loan">Amount</label> -->
+            </form>
+          </div>
+
+          <!-- Account close -->
+          <div class="Account-Close">
+            <h2>Close account</h2>
+            <form class="form form--close">
+              <input type="text" class="form__input form__input--user" />
+              <input
+                type="password"
+                maxlength="6"
+                class="form__input form__input--pin"
+              />
+              <button class="form__btn form__btn--close">&rarr;</button>
+              <label class="form__label">Confirm user</label>
+              <label class="form__label">Confirm PIN</label>
+            </form>
+          </div>
+
+          <!-- LOGOUT TIMER -->
+          <p class="logout-timer">
+            You will be logged out in <span class="timer">05:00</span>
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="./assets/Js/script.js"></script>
+  </body>
+</html>
