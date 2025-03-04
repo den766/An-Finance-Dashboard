@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
       document.getElementById("content").style.display = "block";
     } else {
       console.log("No user logged in.");
-      window.location.href = "login.html";
+      window.location.href = "index.html";
     }
   }, 1000);
 });
