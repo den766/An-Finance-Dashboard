@@ -59,7 +59,7 @@ CreateUsername(accounts);
 
 const loginHandlerFunction = function (e) {
   e.preventDefault();
-  const userInputValue = UserInput.value;
+  const userInputValue = UserInput.value.toLowerCase();
   const PassInputValue = +PasswordInput.value;
 
   const user = accounts.find(
