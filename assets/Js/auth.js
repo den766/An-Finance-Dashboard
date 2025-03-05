@@ -71,13 +71,13 @@ const loginHandlerFunction = function (e) {
     localStorage.setItem("loggedInUser", JSON.stringify(user));
     // Redirect to the dashboard with a 1-second delay
 
-    // saving allUsers when login happens
+    // saving allUsers when login happens 
     if (!localStorage.getItem("allUsers")) {
       localStorage.setItem("allUsers", JSON.stringify(accounts));
     }
 
     setTimeout(() => {
-      window.location.href = "main.html";
+      window.location.href = "index.html";
     }, 1000);
   } else {
     alert("Invalid username or password. Please try again.");

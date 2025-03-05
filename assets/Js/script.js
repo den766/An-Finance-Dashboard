@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
       document.getElementById("content").style.display = "block";
     } else {
       console.log("No user logged in.");
-      window.location.href = "index.html";
+      window.location.href = "login.html";
     }
   }, 1000);
 });
@@ -172,3 +172,4 @@ btnLoanAmount.addEventListener("keydown", function (e) {
 // I need to clear the problem of Data not presisting , becuase of updated ui only showing old data,
 // need to implement time functionality on each payment
 //need to perform the sort functionality 
+//Do it on 11-3-2025 before 3pm 😊😊
