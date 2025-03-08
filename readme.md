@@ -33,7 +33,7 @@ A simple yet powerful **Banking Dashboard** built using JavaScript, HTML, and CS
 
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/your-username/banking-dashboard.git
+   git clone hhttps://github.com/den766/An-Finance-Dashboard.git
    ```
 2. **Open the Project:**
    ```sh
